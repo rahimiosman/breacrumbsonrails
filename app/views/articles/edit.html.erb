@@ -1,0 +1,19 @@
+<div class="container overflow-hidden">
+  <div class="row gy-5">
+    <div class="col-6">
+      <div class="p-3 border bg-light">
+        <div class="text-center">
+          <h2><%= @article[:title] %></h2>
+            <br>
+            <p>Edit description</p>
+            <textarea name="name" rows="8" cols="70"></textarea>
+        </div>
+        <div>
+          <%= link_to 'Cancel', article_path(@article), class: "btn btn-default" %>
+          <%= link_to 'Save', article_path(@article), class: "btn btn-primary" %>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

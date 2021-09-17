@@ -1,0 +1,17 @@
+<div class="container overflow-hidden">
+  <div class="row gy-5">
+    <div class="col-6">
+      <div class="p-3 border bg-light">
+        <div class="text-center">
+          <h2><%= @article[:title] %></h2>
+            <%= image_tag(@article[:image], :style => "width: 20em; height: 20em;") %>
+            <br>
+            <p><%= @article[:description] %></p>
+        </div>
+        <div>
+          <%= link_to 'Edit', edit_article_path, class: "btn btn-info" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
